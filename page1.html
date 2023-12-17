@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><img src="img/famous dishes.png"/></header>
+<nav class="nav">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <span class="menu-icon" id="menu-icon">&#9776;</span>
+
+    <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+            <a href="content.html" class="nav__link">Author</a>
+        </li>
+    </ul>
+
+    <ul class="nav__list--collapse" id="nav__list--collapse">
+        <li class="nav__item--collapse">
+            <a href="index.html" class="nav__link--collapse">Home</a>
+        </li>
+        <li class="nav__item--collapse">
+            <a href="content.html" class="nav__link--collapse">Author</a>
+        </li>
+    </ul>
+</nav>
+<div class="content">
+    <div class="content_con">
+        <div class="title_img">
+            <div><img src="img/img2.jpg"/></div>
+            <div><img src="img/img3.jpg"/></div>
+        </div>
+        <div class="page_des">
+            <h1>Peking Duck</h1>
+            <h3>
+                Ingredients:
+            </h3>
+            <ul> 
+                <li>1 whole duck, about 4 pounds</li>
+                <li> 1/4 cup maltose syrup or honey</li>
+                <li>2 teaspoons soy sauce</li>
+                <li>2 tablespoons kosher salt</li>
+                <li>2 teaspoons baking powder </li>
+                <li>One 16-ounce tall boy of beer, emptied and refilled half way with water </li>
+               
+            </ul>
+               
+            
+
+            <p>
+                Dry duck carefully with paper towels and place on wire rack set in foil-lined rimmed baking sheet. Using fingers or dull handle of a wooden spoon, carefully separate skin from breast meat by inserting fingers through bottom of breasts and slowly working your way up. Be careful not to tear skin. In a small microwave-safe bowl, combine maltose and soy sauce with 1 tablespoon water. Microwave on high until maltose is softened, about 20 seconds. Stir together mixture with spoon until homogeneous. Spoon mixture over duck and rub over entire surface, making sure to coat all exposed skin. In a small bowl, combine salt and baking powder. Sprinkle evenly over all surfaces of duck. Refrigerate duck, uncovered, at least 12 and up to 36 hours until surface is completely dry with leathery appearance. Then adjust rack to lowest position and preheat oven to 350°F (180°C). In a large stockpot, bring 4 quarts water to a rolling boil. Place duck on wire rack set in sink. Pour half of boiling water over top surface of duck, making sure to cover skin evenly. Flip duck and pour remaining boiling water over second side. Allow duck to dry 5 minutes. Finally, stand the duck vertically by inserting beer can into cavity and place on wire rack set in rimmed baking sheet. You may need to break or remove the duck's tail to get it to stand. Roast, rotating after 30 minutes until skin is a deep mahogany, about 1 hour. Reduce heat to 250°F (120°C) and continue roasting until fat stops dripping from cavity, about 30 minutes longer. Carefully remove duck from beer can and transfer to cutting board. Allow to rest 10 minutes before carving.
+            </p>
+        </div>
+    </div>
+</div>
+<footer>
+    Chinese food
+</footer>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.getElementById('nav__list');
+    const navListCollapse = document.getElementById('nav__list--collapse');
+
+    menuIcon.addEventListener('click', () => {
+        navList.classList.toggle('show');
+        navListCollapse.classList.toggle('show');
+    });
+</script>
+</body>
+</html>

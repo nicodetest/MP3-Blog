@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><img src="img/famous dishes.png"/></header>
+<nav class="nav">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <span class="menu-icon" id="menu-icon">&#9776;</span>
+
+    <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+            <a href="content.html" class="nav__link">Author</a>
+        </li>
+    </ul>
+
+    <ul class="nav__list--collapse" id="nav__list--collapse">
+        <li class="nav__item--collapse">
+            <a href="index.html" class="nav__link--collapse">Home</a>
+        </li>
+        <li class="nav__item--collapse">
+            <a href="content.html" class="nav__link--collapse">Author</a>
+        </li>
+    </ul>
+</nav>
+<div class="content">
+    <div class="content_con">
+        <div class="title_img">
+            <div><img src="img/img5.jpg"/></div>
+            <div><img src="img/img6.jpg"/></div>
+        </div>
+        <div class="page_des">
+            <h1>Dongpo Pork</h1>
+            <h3>
+                Ingredients:
+            </h3>
+            <ul> 
+                <li>1 pound raw pork belly</li>
+                <li>3 tablespoons vegetable oil</li>
+                <li>¼ cup light and dark soy sauce</li>
+                <li>½ cup Chinese rice cooking wine</li>
+                <li>3 ½ ounces Chinese rock sugar </li>
+                <li>1 (1 inch) piece fresh ginger, peeled and grated </li>
+                <li>8 spring onions, sliced</li>
+               
+            </ul>
+               
+        
+
+            <p>
+                Slice pork belly into 2-inch wide strips. Bring a large pot of water to a boil, and stir in pork slices; reduce heat to a simmer, and cook the meat for 10 minutes. Remove from the water and blot dry with paper towels. Heat vegetable oil over medium-high heat in a large wok. Brown pork strips well on all sides. Pork will splatter — use a splatter shield for this step. While pork is browning, mix together light soy sauce, dark soy sauce, rice wine, rock sugar, ginger, and spring onions in a large soup pot or stockpot. Bring the mixture to a boil, stirring to dissolve sugar. Reduce heat to a gentle simmer and lay the pork strips into the liquid. Cover, and simmer until the meat is very tender, 1 1/2 to 2 hours. Add water as needed to keep the liquid from going completely dry.
+            </p>
+        </div>
+    </div>
+</div>
+<footer>
+    Chinese food
+</footer>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.getElementById('nav__list');
+    const navListCollapse = document.getElementById('nav__list--collapse');
+
+    menuIcon.addEventListener('click', () => {
+        navList.classList.toggle('show');
+        navListCollapse.classList.toggle('show');
+    });
+</script>
+</body>
+</html>

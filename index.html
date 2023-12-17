@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><img src="img/famous dishes.png"/></header>
+<nav class="nav">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <span class="menu-icon" id="menu-icon">&#9776;</span>
+
+    <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+            <a href="content.html" class="nav__link">Author</a>
+        </li>
+    </ul>
+
+   
+    <ul class="nav__list--collapse" id="nav__list--collapse">
+        <li class="nav__item--collapse">
+            <a href="index.html" class="nav__link--collapse">Home</a>
+        </li>
+        <li class="nav__item--collapse">
+            <a href="content.html" class="nav__link--collapse">Author</a>
+        </li>
+    </ul>
+</nav>
+<div class="content">
+    <div class="list">
+        <div>
+            <div class="list_left">
+                <img src="img/img1.jpg"/>
+            </div>
+            <div class="list_right">
+                <h1>Peking Duck</h1>
+                <p>
+                    Peking duck is a dish from Beijing that has been prepared since the Imperial era. The meat is characterized by its thin, crispy skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook. 
+                </p>
+                <a href="page1.html" class="see">View Details</a>
+            </div>
+        </div>
+        <div>
+            <div class="list_left">
+                <img src="img/img4.jpg"/>
+            </div>
+            <div class="list_right">
+                <h1>Dongpo Pork</h1>
+                <p>
+                    Dongpo pork, is a Hangzhou dish that is made by pan-frying and then red-cooking pork belly. The pork is cut thick, about 5 centimeters (2.0 in) square, and should consist equally of fat and lean meat. The skin is left on. The mouthfeel is oily but not greasy and the dish is fragrant with wine. 
+                </p>
+                <a href="page2.html" class="see">View Details</a>
+            </div>
+        </div>
+        <div>
+            <div class="list_left">
+                <img src="img/img7.jpg"/>
+            </div>
+            <div class="list_right">
+                <h1>Mapo Tofu</h1>
+                <p>
+                    Mapo tofu is a popular Chinese dish from Sichuan province. It consists of tofu set in a spicy sauce, typically a thin, oily, and bright red suspension, based on douban (fermented broad bean and chili paste), and douchi (fermented black beans), along with minced meat, traditionally beef.
+                </p>
+                <a href="page3.html" class="see">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    Chinese food
+</footer>
+
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.getElementById('nav__list');
+    const navListCollapse = document.getElementById('nav__list--collapse');
+
+    menuIcon.addEventListener('click', () => {
+        navList.classList.toggle('show');
+        navListCollapse.classList.toggle('show');
+    });
+</script>
+</body>
+</html>
